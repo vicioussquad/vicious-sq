@@ -1,0 +1,77 @@
+.bg_main{
+    height: 100vh;
+    position: relative;
+    
+}
+
+.bg_main .img{
+    width: 100vw;
+    text-align: center;
+    opacity: 0.2;
+}
+
+.bg_main .team-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .owner:hover{
+    opacity: 0;
+}
+
+.char{
+    -webkit-animation: fade-out 1.2s ease-out both;
+	        animation: fade-out 1.2s ease-out both;
+}
+
+.box .char:hover{
+    scale: 1.2;
+    -webkit-animation: fade-in 1.2s ease-in both;
+	        animation: fade-in 1.2s ease-in both;
+}
+
+
+
+
+
+
+/* FADE IN */
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+  /* FADE OUT */
+
+  @-webkit-keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
